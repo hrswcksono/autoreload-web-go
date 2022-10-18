@@ -1,16 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="refresh" content="5" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="refresh" content="5" />
+  <style media="screen">
+    .box-image {
+      flex-grow: 1;
+      /* properti lainnya */
+      /* font-size: 1.5em; */
+      text-align: center;
+      padding: 40px;
+      border: 1px solid black;
+      background: -webkit-linear-gradient(top, #DC5F00, #CF0A0A);
+      cursor: pointer;
+      width: 35%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      position: center;
+    }
+
+    body {
+      background-color: #EEEEEE;
+    }
+  </style>
+  <title>Document</title>
+</head>
+
+<body>
+  <div>
+    <div class="box-image">
       <h1>Status Water => {{.WaterStatus}}</h1>
+    </div>
+    <div class="box-image">
       <h1>Status Wind => {{.WindStatus}}</h1>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
